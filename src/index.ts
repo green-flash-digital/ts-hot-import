@@ -1,4 +1,4 @@
-import { build } from "esbuild";
+import * as esbuild from "esbuild";
 import { TempFile } from "ts-jolt/node";
 
 /**
@@ -22,7 +22,7 @@ export async function hotImport<T extends Record<string, unknown>>(
   const tsconfigRaw =
     options?.tsconfigRaw ?? JSON.stringify("ts-jolt/tsconfig/library");
 
-  const result = await build({
+  const result = await esbuild.build({
     entryPoints: [tsFilePath],
     tsconfigRaw,
     write: false,
