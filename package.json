@@ -1,9 +1,9 @@
 {
   "name": "ts-hot-import",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Dynamically transpile and import a TypeScript module on the fly from a file path",
   "type": "module",
-  "sideEffects": "false",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/green-flash-digital/ts-hot-import.git"

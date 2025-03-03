@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.5
+
+2025-03-03
+
+### 🐛 Fixed
+
+- Updates the `sideEffects` field in the package.json to be a boolean value
+
 ## v0.1.4
 
 2025-03-03
