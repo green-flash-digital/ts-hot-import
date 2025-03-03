@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.4
+
+2025-03-03
+
+### 🐛 Fixed
+
+- Updates `ts-jolt` to directly stringify the tsconfig into the raw esbuild params
+
 ## v0.1.3
 
 2025-03-03

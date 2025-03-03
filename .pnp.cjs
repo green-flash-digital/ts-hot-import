@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/node", "npm:22.13.8"],\
           ["esbuild", "npm:0.25.0"],\
-          ["ts-jolt", "npm:0.2.1"],\
+          ["ts-jolt", "npm:0.2.2"],\
           ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
           ["vitest", "virtual:7b052dac64e661d8bc154648ea205aafa6f819b9fd7629296afc415124d69e0587a641331585611a8b16fd47dfd2d0190c0bdeae79e5ae07b9f94e86e1774f93#npm:3.0.7"]\
         ],\
@@ -1703,7 +1703,7 @@ const RAW_RUNTIME_STATE =
           ["ts-hot-import", "workspace:."],\
           ["@types/node", "npm:22.13.8"],\
           ["esbuild", "npm:0.25.0"],\
-          ["ts-jolt", "npm:0.2.1"],\
+          ["ts-jolt", "npm:0.2.2"],\
           ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
           ["vitest", "virtual:7b052dac64e661d8bc154648ea205aafa6f819b9fd7629296afc415124d69e0587a641331585611a8b16fd47dfd2d0190c0bdeae79e5ae07b9f94e86e1774f93#npm:3.0.7"]\
         ],\
@@ -1711,10 +1711,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ts-jolt", [\
-      ["npm:0.2.1", {\
-        "packageLocation": "../../../.yarn/berry/cache/ts-jolt-npm-0.2.1-481be474e1-10c0.zip/node_modules/ts-jolt/",\
+      ["npm:0.2.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/ts-jolt-npm-0.2.2-87636019dc-10c0.zip/node_modules/ts-jolt/",\
         "packageDependencies": [\
-          ["ts-jolt", "npm:0.2.1"]\
+          ["ts-jolt", "npm:0.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
