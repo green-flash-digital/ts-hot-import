@@ -27,6 +27,7 @@ export async function hotImport<T extends Record<string, unknown>>(
     entryPoints: [tsFilePath],
     tsconfigRaw,
     platform,
+    format: "esm",
     bundle: true,
     write: false,
   });
