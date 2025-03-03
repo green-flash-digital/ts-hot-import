@@ -1,6 +1,6 @@
 {
   "name": "ts-hot-import",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Dynamically transpile and import a TypeScript module on the fly from a file path",
   "type": "module",
   "sideEffects": "false",

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.3
+
+2025-03-03
+
+### 🐛 Fixed
+
+- Reverts back to `tsconfigRaw` to ensure that we can extend the custom `tsconfig`
+
 ## v0.1.2
 
 2025-03-03
