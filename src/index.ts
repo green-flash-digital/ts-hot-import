@@ -27,6 +27,7 @@ export async function hotImport<T extends Record<string, unknown>>(
   const result = await esbuild.build({
     entryPoints: [tsFilePath],
     tsconfigRaw,
+    bundle: true,
     write: false,
   });
   const outputFile = result.outputFiles[0];
