@@ -17,14 +17,13 @@ import { TempFile } from "ts-jolt/node";
  */
 export async function hotImport<T extends Record<string, unknown>>(
   tsFilePath: string,
-  options?: { tsconfigRaw?: string }
+  options?: { tsconfig?: string }
 ) {
-  const tsconfigRaw =
-    options?.tsconfigRaw ?? JSON.stringify("ts-jolt/tsconfig/library");
+  const tsconfig = options?.tsconfig ?? "ts-jolt/tsconfig/library";
 
   const result = await esbuild.build({
     entryPoints: [tsFilePath],
-    tsconfigRaw,
+    tsconfig,
     write: false,
   });
   const outputFile = result.outputFiles[0];

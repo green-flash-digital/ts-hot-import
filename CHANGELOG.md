@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.2
+
+2025-03-03
+
+### 🐛 Fixed
+
+- Updates the `tsconfig` option to use a configuration instead of the raw output
+
 ## v0.1.1
 
 2025-03-03
