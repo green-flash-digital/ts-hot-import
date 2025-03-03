@@ -1,0 +1,76 @@
+{
+  "name": "ts-hot-import",
+  "version": "0.0.1",
+  "description": "Dynamically transpile and import a TypeScript module on the fly from a file path",
+  "type": "module",
+  "sideEffects": "false",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-flash-digital/ts-hot-import.git"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn tsc --project ./tsconfig.build.json",
+    "dev": "yarn build --watch"
+  },
+  "keywords": [
+    "typescript",
+    "dynamic",
+    "import",
+    "esm",
+    "esmodule",
+    "transpile",
+    "hot",
+    "import",
+    "runtime",
+    "esbuild",
+    "import",
+    "on",
+    "the",
+    "fly",
+    "module",
+    "loader",
+    "ts",
+    "import",
+    "temp",
+    "file",
+    "dynamic",
+    "module",
+    "file",
+    "path",
+    "import",
+    "no",
+    "build",
+    "step",
+    "hot",
+    "swap",
+    "typescript",
+    "loader",
+    "on",
+    "demand",
+    "ts-to-esm",
+    "ts",
+    "module",
+    "loader"
+  ],
+  "author": "Drew DeCarme (drew@greenflash.digital)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/green-flash-digital/ts-hot-import/issues"
+  },
+  "homepage": "https://github.com/green-flash-digital/ts-hot-import#readme",
+  "packageManager": "yarn@4.7.0",
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.0",
+    "ts-jolt": "^0.2.1"
+  }
+}
