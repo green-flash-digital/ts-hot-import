@@ -1,6 +1,6 @@
 import * as esbuild from "esbuild";
 import { TempFile } from "ts-jolt/node";
-import tsconfig from "ts-jolt/tsconfig/library" with { type: "json"}
+import tsconfig from "ts-jolt/tsconfig/library" with { type: "json"};
 
 /**
  * Dynamically transpiles and imports a TypeScript module as an ESModule.
@@ -18,15 +18,15 @@ import tsconfig from "ts-jolt/tsconfig/library" with { type: "json"}
  */
 export async function hotImport<T extends Record<string, unknown>>(
   tsFilePath: string,
-  options?: { tsconfigRaw?: string }
+  options?: Pick<esbuild.BuildOptions, "platform" | "tsconfigRaw">
 ) {
-  const tsconfigRaw =
-    options?.tsconfigRaw ??
-    JSON.stringify(tsconfig, null, 2);
+  const platform = options?.platform ?? "node";
+  const tsconfigRaw = options?.tsconfigRaw ?? JSON.stringify(tsconfig, null, 2);
 
   const result = await esbuild.build({
     entryPoints: [tsFilePath],
     tsconfigRaw,
+    platform,
     bundle: true,
     write: false,
   });
