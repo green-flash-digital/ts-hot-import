@@ -1,6 +1,20 @@
 import { build } from "esbuild";
 import { TempFile } from "ts-jolt/node";
 
+/**
+ * Dynamically transpiles and imports a TypeScript module as an ESModule.
+ *
+ * This function uses `esbuild` to transpile the provided TypeScript file into
+ * a JavaScript ESModule, writes it to a temporary file, and then dynamically
+ * imports it using the native `import()` function. The temporary file is
+ * automatically cleaned up after import.
+ *
+ * @example
+ * // Import a TypeScript module dynamically
+ * const module = await hotImport<MyModuleType>('./path/to/module.ts');
+ * console.log(module.default);
+ *
+ */
 export async function hotImport<T extends Record<string, unknown>>(
   tsFilePath: string,
   options?: { tsconfigRaw?: string }

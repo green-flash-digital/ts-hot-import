@@ -1,6 +1,6 @@
 {
   "name": "ts-hot-import",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Dynamically transpile and import a TypeScript module on the fly from a file path",
   "type": "module",
   "sideEffects": "false",
@@ -15,6 +15,8 @@
     "dist"
   ],
   "scripts": {
+    "test": "yarn vitest",
+    "test:ci": "yarn test --run",
     "build": "yarn tsc --project ./tsconfig.build.json",
     "dev": "yarn build --watch"
   },
@@ -67,7 +69,8 @@
   "packageManager": "yarn@4.7.0",
   "devDependencies": {
     "@types/node": "^22.13.8",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
   },
   "dependencies": {
     "esbuild": "^0.25.0",
